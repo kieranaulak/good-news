@@ -3,17 +3,23 @@
 body{
     background-color:#696969;
     color:white;
-    
+    margin: 0px;
 }
 
 header{
     width:100%;
-    padding:10px;
-    margin:10px;
+    margin: 0px;
+    padding:10px 0px 10px 0px;
     float:none;
     background-color:#404040;
     text-align:center;
+    font-family: 'Lora', serif;
     
+}
+
+article a{
+    color: white;
+    align-self: center;
 }
 
 
@@ -47,8 +53,22 @@ main{
     text-align:center;
 }
 
-.article{
+.postBox{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-left: 10px;
+    border-right-width: 10px;
     background-color:#404040;
+}
+
+.postBox figure {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.postBox figure img{
+    width: 100%;
 }
 
 .postBox{
@@ -64,18 +84,58 @@ main{
 }
 .artFoot{
     overflow:hidden;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .date{
+    font-family: 'Merriweather Sans', sans-serif;
     float:left;
     width:40%;
 }
 .subreddit{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
     float:right;
     width:40%
 }
 
+.postTitle{
+    font-family: 'Lora', serif;
+    grid-column-start: 1;
+    align-self: center;
+}
+
+.postSnip{
+    font-family: 'Merriweather Sans', sans-serif;
+    grid-column-start: 1;
+}
+
+#topGood h3{
+    font-family: 'Lora', serif;
+}
+
+#topGood p {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#lowBad h3{
+    font-family: 'Lora', serif;
+}
+
+#lowBad p {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#tgSnip{
+    max-width: 230px;
+    margin-left: calc((100% - 230px)/2);
+}
+
+#lbSnip{
+    max-width: 230px;
+    margin-left: calc((100% - 230px)/2);
+}
+
 .artImg{
-   
-    
     
 }
