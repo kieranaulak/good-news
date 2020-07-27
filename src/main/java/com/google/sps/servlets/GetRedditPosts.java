@@ -52,7 +52,7 @@ public class GetRedditPosts extends HttpServlet {
 
     //Make the request to r/wholesomenews and store the list of posts in an array
     Request req = new Request.Builder()
-    .url("https://www.reddit.com/r/wholesomenews/best/.json")
+    .url("https://www.reddit.com/r/UpliftingNews/hot/.json")
     .method("GET", null)
     .addHeader("Cookie", "loid=000000000077hktwpd.2.1594233772555.Z0FBQUFBQmZCaE9zVjE4dzliSkxXVzAwM2JLTnptY2d1cVJScU9VMC0ydWMxM2J"+
     "jSUIwSEdhczQxeWVlQmMwNkJ1cURTNW1VNWg3QkUwWkZxRXBxeWh1Ni1TalJwSVU0d3U1YkxVM3p2U0I2b2ptSmVhdVpNNjRTUlRHRkY5Nzhub2VKTUVKX2NMUnA;"+
@@ -68,7 +68,7 @@ public class GetRedditPosts extends HttpServlet {
 
     //Make the request to r/news and store the list of posts in an array
     req = new Request.Builder()
-    .url("https://www.reddit.com/r/news/best/.json")
+    .url("https://www.reddit.com/r/news/hot/.json")
     .method("GET", null)
     .addHeader("Cookie", "loid=000000000077hktwpd.2.1594233772555.Z0FBQUFBQmZCaE9zVjE4dzliSkxXVzAwM2JLTnptY2d1cVJScU9VMC0ydWMxM2J"+
     "jSUIwSEdhczQxeWVlQmMwNkJ1cURTNW1VNWg3QkUwWkZxRXBxeWh1Ni1TalJwSVU0d3U1YkxVM3p2U0I2b2ptSmVhdVpNNjRTUlRHRkY5Nzhub2VKTUVKX2NMUnA;"+
